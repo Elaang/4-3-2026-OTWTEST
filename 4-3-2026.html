@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration :3</title>
+</head>
+<body>
+    <h1>Form Registration</h1>
+    <form id="courseForm">
+        <p>
+            <label for="studentName">Your Full Name:</label>
+            <input type="text" id="studentName" placeholder="Masukkan nama di sini">
+        </p>
+        <p id="outputname"></p>
+        <p>
+            <label>Date of Birth:</label>
+            <input type="date" id="dob">
+        </p>
+        <p id="outputdob"></p>
+        <p>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </p>
+        <p id="outputgender"></p>
+        </p>
+        <p>
+            <label>Religion:</label>
+            <select id="religion">
+                <option value="">--Select Religion--</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+            </select>
+        </p>
+        <p id="outputreligion"></p>
+        <p>
+            <label>How did you know about SMK Telkom Malang?</label><br>
+            <input type="checkbox" class="hobby" value="Friends"> Friends <br>
+            <input type="checkbox" class="hobby" value="Social Media"> Social Media <br>
+            <input type="checkbox" class="hobby" value="Banner Ads"> Banner Ads <br>
+            <input type="checkbox" class="hobby" value="Newspaper"> Newspaper <br>
+            <input type="checkbox" class="hobby" value="Website"> Website <br>
+            <input type="checkbox" class="hobby" value="Brochure"> Brochure <br>
+            <input type="checkbox" class="hobby" value="Others"> Others
+        </p>
+        <p id="outputhobbies"></p>
+        <button type="button" onclick="generateSummary()">Submit</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+    </form>
+</body>
+</html>
